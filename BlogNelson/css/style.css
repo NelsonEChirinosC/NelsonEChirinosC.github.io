@@ -1,0 +1,198 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+}
+
+body{
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    display:block;
+    max-width: 30%;
+}
+
+/* Menu */
+
+header.sections{
+    position: fixed;
+    width: 100%;
+    padding: 1rem;
+    background-color: rgba(0,0,0,.7);
+}
+
+header.sections ul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+header.sections ul li {
+    margin-right: 2rem;
+}
+
+header.sections ul li a{
+    display:inline-block;
+    text-decoration: none;
+    padding: 0.8rem 1rem;
+    border: 1px solid #fff;
+    color: #bbb;
+    border-radius: 10px;
+    transition: 0.5s all;
+}
+
+header.sections ul li a:hover{
+    color: #fff;
+    background: rgba(0,0,0,.3);
+}
+
+/* Contenido General */
+
+.wrapper {
+    width: 100%;
+    margin: auto;
+}
+
+/* Quien soy  */
+
+.wrapper section#mySelf{
+    height: 100vh;
+    width: 100%;
+    border-bottom: 2px solid #000;
+    background: url('/img/mecanicaP.jpg') center center no-repeat / cover;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper section#mySelf img{
+    border-radius: 50%;
+    border: 2px solid #000;
+    box-shadow: 0 0 5px #fff;
+    margin: 0 4rem;
+}
+
+.wrapper section#mySelf .description{
+    background-color: rgba(0,0,0,.7);
+    color: #bbb;
+    padding: 2rem;
+    margin-right: 1rem;
+    text-align: center;
+    line-height: 1.8;
+    border: 1px solid #000;
+    box-shadow: 0 0 5px #fff;
+    text-shadow: 0 0 3px #000;
+    border-radius: 10px;
+}
+
+.wrapper section#mySelf .description h1{
+    font-size: 2rem;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+/* Aptitudes */
+
+.wrapper section#aptitud {
+    height: 100vh;
+    width: 100%;
+    /* background-color: #bbb; */
+    background: url('../img/mecanicaA.jpg') no-repeat center center /cover;
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.wrapper section#aptitud ul{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: rgba(0,0,0,.7);
+    width: 80%;
+    height: 80%;
+    margin-top: 4rem;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid #000;
+    box-shadow: 0 0 5px #fff;
+}
+
+.wrapper section#aptitud ul li{
+    width: 350px;
+    height: 110px;
+    padding: 1rem;
+    border-radius: 10px;
+    color: #ddd;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-shadow: 0 0 2px #000;
+    letter-spacing: 2px;
+    position: relative;
+    justify-self: center;
+    /* border: 3px yellow solid; */
+}
+
+.wrapper section#aptitud ul li#title{
+    font-size: 4rem;
+    grid-column: 1 / -1;
+    justify-self: center;
+    color: #fff;
+}
+
+.wrapper section#aptitud ul li#ap1{
+    background: url('../img/meca\ numero\ 1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: -30px;
+    background-position-y: center;
+}
+
+.wrapper section#aptitud ul li#ap2{
+    background: url('../img/meca\ numero\ 2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: -30px;
+    background-position-y: center;
+}
+
+.wrapper section#aptitud ul li#ap3{
+    background: url('../img/meca\ numero\ 3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: -30px;
+    background-position-y: center;
+}
+
+.wrapper section#aptitud ul li#ap4{
+    background: url('../img/meca\ numero\ 4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: -20px;
+    background-position-y: center;
+}
+
+.wrapper section#aptitud ul li#ap5{
+    background: url('../img/meca\ numero\ 5.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: -30px;
+    background-position-y: center;
+}
+
+.wrapper section#aptitud ul li#ap6{
+    background: url('../img/meca\ numero\ 6.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: -30px;
+    background-position-y: center;
+}
+
+.wrapper section#aptitud ul li span{
+    position: absolute;
+    top: 38px;
+    left: 100px;
+}
