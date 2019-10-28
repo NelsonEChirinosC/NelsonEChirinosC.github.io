@@ -7,13 +7,19 @@
     <title> Nelson Chirinos </title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cb5f356e9e.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="sections">
-        <ul>
+        <ul class='social'>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fab fa-github"></i></a></li>
+        </ul>
+        <ul class='menu'>
             <li><a href="#mySelf">Quien soy</a></li>
             <li><a href="#aptitud">Aptitudes</a></li>
-            <li><a href="">Proyectos</a></li>
+            <li><a href="#proyects">Proyectos</a></li>
             <li><a href="">Contacto</a></li>
         </ul>
     </header>
@@ -36,6 +42,34 @@
                 <li id="ap5"> <span> Creatividad</span></li>
                 <li id="ap6"> <span> Proactividad</span></li>
             </ul>
+        </section>
+
+        <section id="proyects">
+            <div class="wrapper-proyects">
+                <h1> Proyectos </h1>
+                <div class="myProyects">
+                    <ul>
+                        <li><a href="#"> Sillas Masajeadoras </a></li>
+                        <li><a href="#"> Final Fantasy </a></li>
+                        <li><a href="#"> Formulario Alien</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <form action="">
+                <fieldset>
+                    <legend> Contacto </legend>
+                    <label for="name"> Nombre Completo </label>
+                    <input type="text" name="name" id="name" placeholder="ej. Carlos Arturo">
+                    <label for="email"> Email </label>
+                    <input type="email" name="email" id="email" placeholder="ej. giodls@gmail.com">
+                    <label for="opinion"> Dejame un comentario </label>
+                    <textarea name="opinion" id="opinion"></textarea>
+                </fieldset>
+                <button class='btn' type="submit"> Enviar </button>
+            </form>
         </section>
     </div>
 </body>
