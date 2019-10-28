@@ -520,6 +520,11 @@ header.sections ul.social i{
 
     .wrapper section#aptitud ul li{
         width: 90%;
+        background-repeat: repeat !important;
+    }
+
+    .wrapper section#aptitud ul li#ap4{
+        background-position-x: -15px;
     }
 
     .wrapper section#aptitud ul li#title{
