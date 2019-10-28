@@ -63,7 +63,7 @@ header.sections ul li a:hover{
     height: 100vh;
     width: 100%;
     border-bottom: 2px solid #000;
-    background: url('../img/mecanicaP.jpg') center center no-repeat / cover;
+    background: url('mecanicaP.jpg') center center no-repeat / cover;
     display:flex;
     justify-content: center;
     align-items: center;
