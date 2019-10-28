@@ -1,0 +1,276 @@
+
+/* General */
+body{
+
+	font:15px/1.5 Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: rgb(17, 17, 17);
+}
+
+.contanier{
+
+	width: 90%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.clear{
+	clear: both;
+}
+
+.clear2{
+	clear: left;
+}
+
+.hide{
+
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 5s, opacity 3s;
+}
+
+.appear{
+
+		visibility: visible;
+		opacity: 1;
+		transition: visibility 5s, opacity 3s;
+
+}
+
+
+/*header*/
+
+header{
+
+	background-color: rgba(24, 201, 62, 0.6);
+	border-bottom: rgb(24, 71, 3) 2px solid;
+}
+
+header div.contanier h1{
+
+	color:  rgb(241, 243, 243);
+	float:left;
+	margin-right: 50px;
+}
+
+
+header div.contanier ul {
+
+	list-style-type: none;
+
+}
+
+header div.contanier ul li{
+
+	border-radius: 10px;
+	padding: 10px;
+	float: left;
+	
+	font-size: 18px;
+	margin-right: 10px;
+	margin-left: 50px;
+	margin-top: 10px;
+	transition-property: background;
+	transition-duration: 3s;
+}
+
+header div.contanier ul li a{
+
+	color: #fff;
+	text-decoration: none;
+	padding: 10px;
+}
+
+header div.contanier ul li:hover{
+
+	background-color:  rgb(24, 71, 3);
+	/* background-color: #000; */
+}
+
+
+header li.current a span {
+
+	color: #000;
+	font-weight: bold;
+}
+
+
+/* Imagenes */
+  
+section#Home-page div.contanier div#Home-images{
+
+	height: 500px;
+}
+
+/* Descripcion de la pagina principal y quienes somos y donde estamos y precios*/
+
+section#Home-describe div.contanier p#principal, section#who_we_are div.contanier p, section#where_we_are div.contanier
+p, section#price div.contanier div#content-price p {
+
+	padding: 20px;
+	text-align: center;
+	background-color: rgb(6, 87, 10);
+	color: #fff;
+	border-radius: 10px;
+	width: 80%;
+	margin: auto;
+}
+
+section#where_we_are div.contanier p#first_p_especial,section#where_we_are div.contanier p#second_p_especial{
+
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 5s, opacity 3s;
+
+}
+
+section#who_we_are div.contanier div.person{
+
+	float: left;
+	width: 70%;
+}
+
+section#who_we_are div.contanier div.aside{
+
+	float:left;
+	margin-top: 70px;
+	width: 20%;
+}
+
+section#where_we_are div.contanier p {
+
+	margin-bottom: 50px;
+}
+
+/*section#where_we_are div.contanier div.hidden p{
+
+	display: none;
+	transition-property: display;
+	transition-duration: 2s;
+
+}*/
+
+section#who_we_are div.contanier div.person h2 {
+
+	color:#fff;
+
+}
+
+div.contanier h2.h2_especial{
+
+	background-color: rgba(24, 201, 62, 0.6);
+
+	width: 30%;
+	border: rgb(24, 71, 3) 1px solid;
+	border-radius: 10px;
+	margin: 20px auto;
+	padding: 10px;
+	text-align: center;
+}
+
+div.contanier h2.h2_especial2{
+
+	background-color: rgba(24, 201, 62, 0.6);
+	border:  rgb(24, 71, 3) 1px solid;
+	float: left;
+	width: 10%;
+	border-radius: 10px;
+	margin-bottom: 20px;
+	padding: 10px;
+	text-align: center;
+}
+
+section#where_we_are div.contanier h2.h2_especial:hover{
+
+	cursor: pointer;
+}
+
+section#price div.contanier div#minutes_price h2.h2_hidden{
+
+	background-color: rgba(24, 201, 62, 0.6);
+	border:  rgb(24, 71, 3) 1px solid;
+	position: relative;
+	left: 50px;
+	top: 20px;
+	width: 75%;
+	border-radius: 10px;
+	padding: 10px;
+	margin: auto;
+	text-align: center;
+}
+
+section#where_we_are div.contanier div#CC{
+
+	float: left;
+	width: 70%;
+}
+
+section#where_we_are div.contanier div.aside{
+
+	float:left;
+	margin-top: 70px;
+	width: 20%;
+}
+
+
+section#price div.contanier div#minutes_price{
+
+	width: 70%;
+	float: left;
+}
+
+section#price div.contanier div#price-images{
+
+	width: 30%;
+	float: right;
+	box-sizing: border-box;
+}
+
+section#price div.contanier div#content-price p{
+
+	margin-top: 50px;
+	margin-right: 400px;
+	width: 60%;
+}
+
+
+
+/* footer*/
+
+footer#principal-footer{
+
+	background-color: rgba(24, 201, 62, 0.6);
+	color: #fff;
+	text-align: center;
+	font-size: 18px;
+	padding: 10px;
+	margin-top: 20px;
+	border-top: rgb(24, 71, 3) 2px solid;
+}
+
+/*Animacion*/
+
+div#Home-images{
+
+	background-image: url('C:/Users/Nelson Chirinos/Desktop/Web/Sillas Masajeadoras/images/final_fantasy.jpg');
+	width: 60%;
+	height: 80%;
+	position: relative;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 230px;
+	animation-name: myAnimation;
+	animation-duration: 10s;
+	animation-iteration-count: 10;
+}
+
+@keyframes myAnimation{
+
+	0%{ left:1500px; }
+	25%{left:0px;}
+	50%{left:0px;}
+	75%{left:0px;}
+	100%{left:-1500px;}
+
+}
