@@ -85,7 +85,7 @@ img{
     cursor:url('cursor.png'),default;
 }
 
-.main-wrapper .moleHole .mole img[alt='hungry']:hover{
+.main-wrapper .moleHole .mole img[class='hungry']:hover{
     cursor:url('cursor-worm.png'),default;
 }
 
