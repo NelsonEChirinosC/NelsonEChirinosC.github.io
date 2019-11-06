@@ -116,7 +116,8 @@ function clickMole(e){
 
 // Funcion que agrega puntos si se le da click correcto
 function addPoints(e){
-    if(e.target.alt === 'hungry' || e.target.alt ==='kingHungry'){
+    console.log(e.target.classList == 'mole');
+    if(e.target.classList == 'hungry' || e.target.classList =='kingHungry'){
         points++;
         feed = true;
         changeProgressBar();
