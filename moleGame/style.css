@@ -82,11 +82,11 @@ img{
 }
 
 .main-wrapper:hover{
-    cursor:url('/images/cursor.png'),default;
+    cursor:url('cursor.png'),default;
 }
 
 .main-wrapper .moleHole .mole img[alt='hungry']:hover{
-    cursor:url('/images/cursor-worm.png'),default;
+    cursor:url('cursor-worm.png'),default;
 }
 
 .main-wrapper .progressBar{
