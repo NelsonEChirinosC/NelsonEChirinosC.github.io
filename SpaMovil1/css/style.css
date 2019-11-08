@@ -1,0 +1,381 @@
+
+:root{
+    --principal-color: rgba(53, 236, 135, 0.5);
+    --logo-color: #5cb85c;
+}
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-color: #eee; */
+}
+
+/* Generales */
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover{
+    opacity: 0.8;
+    text-shadow: 0 0 1px #000;
+}
+
+img{
+    display: block;
+}
+
+/* Cabezal ( logo nombre de la empresa y menu) */
+.menuList{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    font-family: 'Quicksand', sans-serif;
+    border-bottom: 1px solid #000;
+    background-color: var(--principal-color);
+    /* background-color: rgba(0,0,0,.1); */
+}
+
+/* Logo y el nombre de la empresa  */
+.title{
+    display: flex;
+    align-items: center;
+}
+
+
+/* Aqui el desarrollo del logo */
+.menuList .logo-wrapper{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin-right: 1rem;
+    border: 2px solid #000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,.2);
+    box-shadow: 0 0 5px #000;
+    /* background-color: black; */
+}
+
+.menuList .logo-wrapper .shoulder{
+    width: 40px; 
+    height: 80px; 
+    border: 2px solid #555; 
+    /* background: #4D2F25; */
+    background: var(--logo-color);
+    -moz-border-radius: 100px 0 0 100px;
+    -webkit-border-radius: 100px 0 0 100px;
+    border-radius: 100px 0 0 100px;
+    transform: translateX(-20px);
+}
+
+.menuList .logo-wrapper h6{
+    position: absolute;
+    font-family: 'Liu Jian Mao Cao', cursive;
+    font-size: 1.8rem;
+    top: 15px;
+    left: 53px;
+}
+
+.menuList .logo-wrapper .down{
+    position:absolute;
+    top: 48px;
+    left: 50px;
+    width: 40px; 
+    height: 40px; 
+    border: 2px solid #555;
+    /* background: #151517;  */
+    background: var(--logo-color);
+    -moz-border-radius: 0 100% 0 0;
+    -webkit-border-radius: 0 100% 0 0;
+    border-radius: 0 0 100% 0;
+}
+
+/* Nombre de la empresa  */
+.menuList h1{
+    font-weight: 100;
+    text-shadow: 250px 0px 3px #000;
+    font-family: 'Quicksand', sans-serif;
+    padding-bottom: 2px;
+    /* border-bottom: 1px solid rgb(104, 3, 3); */
+    /* font-family: 'Liu Jian Mao Cao', cursive; */
+}
+
+/* Menu */
+.menuList ul{
+    display: flex;
+}
+
+.menuList ul li {
+    margin-right: 1.8rem;
+    font-size: 1.2rem;
+}
+
+/* imagen principal parallax */
+#sillas{
+    width: 100%;
+    height: 582px;
+    background: url('../images/imgSillas1.JPG') no-repeat center center / cover;
+    background-attachment: fixed;
+}
+
+/* Beneficios */
+
+.main-wrapper #benefit{
+    padding: 2rem;
+    background-color: var(--principal-color);
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.main-wrapper #benefit .benefit-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 3px double black;
+}
+
+.main-wrapper #benefit .benefit-title i{
+    font-size: 3.5rem;
+    /* color: rgb(114, 12, 128); */
+    color: rgb(226, 45, 130);
+    text-shadow: 0 0 2px #000;
+}
+
+.main-wrapper #benefit .benefit-title h1{
+    font-size: 3rem;
+    /* text-transform: uppercase; */
+    /* font-family: 'Liu Jian Mao Cao', cursive; */
+    font-family: 'Quicksand', sans-serif;
+    text-shadow: 250px 0 5px #000, -250px 0 5px #000;
+}
+
+.main-wrapper #benefit .benefitNodes{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 50px;
+}
+
+.main-wrapper #benefit .benefitNode{
+    background-color: rgba(0,0,0,.2);
+    border: 1px solid #000;
+    box-shadow: 0 0 2px #000;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    /* color: #fff; */
+}
+
+.main-wrapper #benefit .benefitNode h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Aqui modifico los iconos de la parte de beneficio */
+.main-wrapper #benefit .benefitNode i{
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 2px #000;
+}
+
+#hearth{
+    color: rgb(206, 1, 1);
+}
+
+#robot{
+    color: rgb(46, 45, 45);
+}
+
+#money{
+    color: rgb(236, 240, 26);
+}
+
+#relax{
+    color: rgb(216, 141, 55);
+}
+
+.main-wrapper #benefit .benefitNode p:last-child{
+    line-height: 1.8;
+    font-size: 1.2rem;
+}
+
+/* Espacio entre tema */
+.main-wrapper .spaceBetween{
+    width: 100%;
+    height: 200px;
+    /* transform: rotateZ(180deg); */
+    background: url('../images/imgSillas6.JPG')no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Galeria */
+
+.main-wrapper #gallery{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 1rem 0;
+    background-color: var(--principal-color);
+}
+
+.main-wrapper #gallery .galery-container{
+    margin: 1rem 2rem;
+    padding: 1rem;
+    background-color: rgba(0,0,0,.2);
+    border-radius: 10px;
+    border: 1px solid #000;
+    box-shadow: 0 0 2px #000;
+}
+
+.main-wrapper #gallery .galery-container .galery-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 3px double black;
+}
+
+/* dotted - Defines a dotted border.
+dashed - Defines a dashed border.
+solid - Defines a solid border.
+double - Defines a double border.
+groove - Defines a 3D grooved border. ...
+ridge - Defines a 3D ridged border. ...
+inset - Defines a 3D inset border. ...
+outset - Defines a 3D outset border. */
+
+.main-wrapper #gallery .galery-container .galery-title h1{
+    font-size: 3rem;
+    /* text-transform: uppercase; */
+    font-family: 'Quicksand', sans-serif;
+    text-shadow: 200px 0 5px #000, -200px 0 5px #000;
+}
+
+.main-wrapper #gallery .galery-container .galery-title i{
+    font-size: 3.5rem;
+    /* color: rgb(114, 12, 128); */
+    color: rgb(52, 47, 95);
+    text-shadow: 0 0 2px #000;
+}
+
+
+.swiper-container img{
+    /* display: inline; */
+    height: 400px;
+    box-shadow: 0 0 5px #000;
+    margin:0 auto;
+    /* width: 400px; */
+}
+
+.swiper-pagination > *{
+    width: 13px;
+    height: 13px;
+    /* background-color: #000; */
+    border: 1px solid black;
+    box-shadow: 0 0 5px #000;
+}
+
+/* Ubicanos */
+
+.main-wrapper #ubicate{
+    background-color: var(--principal-color);
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 2rem;
+}
+
+.main-wrapper #ubicate .ubicate-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 3px double black;
+}
+
+.main-wrapper #ubicate .ubicate-title h1{
+    font-size: 3rem;
+    /* text-transform: uppercase; */
+    font-family: 'Quicksand', sans-serif;
+    text-shadow: 220px 0 5px #000, -220px 0 5px #000;
+}
+
+.main-wrapper #ubicate .ubicate-title i{
+    font-size: 3.5rem;
+    /* color: rgb(114, 12, 128); */
+    color: rgb(230, 151, 62);
+    text-shadow: 0 0 2px #000;
+}
+
+.main-wrapper #ubicate .ubicateZone{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border: 3px double black;
+}
+
+.main-wrapper #ubicate .ubicateZone > *{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 10px;
+    border: 1px solid black;
+    background: url('../images/imgSillas6.JPG') no-repeat center center /cover;
+    background-attachment: fixed;
+}
+
+.main-wrapper #ubicate .ubicateZone > * iframe{
+    border: 1px solid black;
+    box-shadow: 0 0 3px #000;
+}
+
+.main-wrapper #ubicate .ubicateZone > * p{
+    background-color: rgba(53, 236, 135, 0.7);
+    padding: 1rem;
+    border: 1px solid black;
+    box-shadow: 0 0 2px #000;
+    border-radius: 10px;
+    width: 50%;
+    line-height: 1.8;
+    font-size: 1.2rem;
+}
+
+/* Footer */
+
+.footer{
+    border-top: 1px solid black;
+    background-color: rgb(32, 32, 32);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.footer p{
+    font-family: 'Liu Jian Mao Cao', cursive;
+    font-size: 2rem;
+    text-shadow: 0 0 1px #000;
+}
