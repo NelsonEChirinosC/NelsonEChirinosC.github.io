@@ -1,0 +1,326 @@
+html{
+    box-sizing: border-box;
+}
+
+*,*::after, *::before{
+    box-sizing: inherit;
+}
+
+body{
+    font-size:16px;
+    margin:0;
+    padding:0;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+.btn{
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+    border: none;
+    padding: 0.4rem 1.2rem;
+    background-color: rgb(233, 124, 124);
+    color: rgb(1, 87, 5);
+    border-radius: 50px;
+    transition: 0.5s all;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: #000;
+}
+
+/* .sliderWrapper::after{
+    content:'';
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100vh;
+    
+    filter: opacity(1);
+    z-index: 1;
+} */
+
+.sliderWrapper h1.chrismastTitle{
+    font-family: 'Dancing Script', cursive;
+    font-size: 10rem;
+    color: #fff;
+    text-shadow: 2px 2px 5px red;
+}
+
+.sliderWrapper{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.sliderWrapper > *{
+    z-index:5;
+}
+
+.sliderWrapperOne{
+    position: relative;
+    /* background-color: blue; */
+    width: 50%;
+    height: 100vh;
+    overflow: hidden;
+    transition: 0.5s all;
+    background: url('../img/fondoNavidad.jpg') no-repeat center center /cover;
+    /* background-color: rgba(233, 240, 169, 0.473); */
+}
+
+.sliderWrapper .btn{
+    opacity: 0;
+    transition: 0.8s all;
+}
+
+.wrapperOne{
+    position: absolute;
+    top:0;
+    left:-12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+.wrapperOne .btn{
+    position:relative;
+    left:5px;
+}
+
+.sliderWrapperTwo{
+    position: relative;
+    /* background-color: yellow; */
+    width: 50%;
+    height: 100vh;
+    overflow: hidden;
+    transition: 0.5s all;
+    background: url('../img/fondoNavidad.jpg') no-repeat center center /cover;
+}
+
+/* .sliderWrapperTwo::after{
+    position: absolute;
+    content: '';
+    top:0;
+    left:-100%;
+    width: 150%;
+    height: 100vh;
+    background: url('../img/fondoNavidad.jpg') no-repeat center center /cover;
+} */
+
+.wrapperTwo{
+    position: absolute;
+    top:0;
+    left:-100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    /* color: red; */
+}
+
+.wrapperTwo .btn{
+    position:relative;
+    left:-10px;
+}
+
+.sliderWrapper .note1{
+    position: relative;
+    top: -150px;
+    left:60px;
+    transform: rotateZ(-10deg);
+    text-align:center;
+    font-family: 'Dancing Script', cursive;
+    color: rgb(247, 45, 45);
+    transition: 0.8s all;
+    background-color: rgba(255, 255, 255, 0.815);
+    width: 400px;
+    border-radius: 10px;
+    padding: 0.3rem;
+}
+
+
+.sliderWrapper .note1 h3{
+    font-size:1.5rem;
+}
+
+.sliderWrapper .note1 p, .sliderWrapper .note2 p{
+    font-size: 1.3rem;
+}
+
+.sliderWrapper .note2{
+    left: 225px;
+    transform: rotateZ(10deg);
+    color: rgb(30, 114, 13);
+}
+
+.sliderWrapper .noteFinal{
+    top:70px;
+}
+
+.sliderWrapper .imgHappy{
+    position:relative;
+    top:300px;
+    left: -300px;
+    width: 300px;
+    padding: 0.5rem;
+    background-color: rgb(121, 226, 100);
+    border-radius: 10px;
+    transition: 0.8s all;
+}
+
+.sliderWrapper .sliderWrapperTwo .imgHappy{
+    background-color: rgb(233, 124, 124);
+    left: 700px;
+}
+
+.sliderWrapper .imgHappy img{
+    box-shadow: 0px 0px 1px #000;
+}
+
+.sliderWrapper .sliderWrapperOne .imgHappy.imgHappyFinal{
+    left:50px;
+}
+
+.sliderWrapper .sliderWrapperTwo .imgHappy.imgHappyFinal2{
+    left: 300px;
+}
+
+.sliderWrapper .show {
+    opacity: 1;
+}
+
+body .sliderWrapper.open .sliderWrapperOne{
+    width: 0%;
+}
+
+body .sliderWrapper.open .sliderWrapperTwo{
+    width: 0%;
+}
+
+.contentWrapper{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100vh;
+    background:url('../img/fondoNavidad2.jpg') no-repeat center center/cover;
+    z-index: -1;
+}
+
+.contentWrapper .contentImg{
+    padding: 0.3rem;
+    background: rgba(243, 38, 38, 0.774);
+    transform: rotateZ(-90deg);
+    flex-basis: 500px;
+}
+
+.contentWrapper .contentImg img{
+    width: 100%;
+}
+
+.contentWrapper .contentPresent{
+    width: 700px;
+    background-color:rgba(240, 230, 202, 0.678);
+    padding: 1rem;
+    font-family: 'Dancing Script', cursive;
+    text-align: justify;
+}
+
+.contentWrapper .contentPresent h1{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.contentWrapper .contentPresent p{
+    line-height: 2;
+    font-size: 1.5rem;
+}
+
+.contentWrapper .contentPresent form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.contentWrapper .contentPresent form .optionPresent {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.contentWrapper .contentPresent form img{
+    width: 60px;
+}
+
+.contentWrapper .contentPresent form .btn{
+    margin: 2rem 0rem 1rem 0rem;
+}
+
+/* HIDE RADIO */
+[type=radio] { 
+  position: absolute;
+  opacity: 0;
+  width: 0px;
+  height: 0px;
+}
+
+/* IMAGE STYLES */
+[type=radio] + img {
+  cursor: pointer;
+}
+
+/* CHECKED STYLES */
+[type=radio]:checked + img {
+  outline: 2px solid #f00;
+}
+
+body .exit{
+
+    position: absolute;
+    top:0;
+    left:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: url('../img/fondoDespedida.jpg')no-repeat center center/cover;
+    opacity: 0;
+    z-index: -2;
+    transition: 0.8s all; 
+}
+
+body .exit h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 4rem;
+}
+
+body .exit p{
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+}
+
+body .exit.showExit{
+    opacity:1;
+    z-index: 10;
+}
+
+
+

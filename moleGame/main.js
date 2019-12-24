@@ -116,7 +116,7 @@ function clickMole(e){
 
 // Funcion que agrega puntos si se le da click correcto
 function addPoints(e){
-    console.log(e.target.classList == 'mole');
+    // console.log(e.target.classList == 'mole');
     if(e.target.classList == 'hungry' || e.target.classList =='kingHungry'){
         points++;
         feed = true;
